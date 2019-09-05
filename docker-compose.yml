@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 services:
   nginx:
     restart: always
@@ -6,11 +6,11 @@ services:
       dockerfile: Dockerfile.dev
       context: ./nginx
     ports:
-      - '3050:80'
+      - "3050:80"
   postgres:
-    image: 'postgres:10.5'
+    image: "postgres:10.5"
   redis:
-    image: 'redis:4.0'
+    image: "redis:4.0"
   api:
     build:
       dockerfile: Dockerfile.dev
